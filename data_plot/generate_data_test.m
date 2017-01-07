@@ -1,0 +1,31 @@
+len = 300;
+for i = 0:len/15:len
+        line([i,i],[0,len]);
+        line([0,len],[i,i]);
+end
+hold on;
+t = linspace(0,2*pi,1000);
+x = 50+13*cos(t);
+y = 150+130*sin(t);
+plot(x,y);
+hold on;
+t = linspace(0,2*pi,1000);
+x = 90+13*cos(t);
+y = 150+50*sin(t);
+plot(x,y);
+hold on;
+t = linspace(0,pi,1000);
+x = 220+40*cos(t);
+y = 150*sin(t);
+plot(x,y);
+hold on;
+t = linspace(0,pi,1000);
+x = 220+75*cos(t);
+y = 200*sin(t);
+plot(x,y);
+hold on;
+t = linspace(0,2*pi,1000);
+x = 220+23*cos(t);
+y = 50+50*sin(t);
+plot(x,y);
+hold on;
